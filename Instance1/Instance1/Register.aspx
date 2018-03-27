@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-
+    <body style="background-color: #999999;">
     <div class="limiter">
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
@@ -78,4 +78,5 @@
 			</div>
 		</div>
 	</div>
+</Body>
 </asp:Content>
