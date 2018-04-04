@@ -94,16 +94,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\BursaryPortal.mdf" />
-    <Content Include="App_Data\BursaryPortal_log.ldf">
-      <DependentUpon>BursaryPortal.mdf</DependentUpon>
-    </Content>
+    <Content Include="Student.aspx" />
+    <Content Include="ValidateSponsor.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Master.Master" />
     <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Options.aspx" />
+    <Content Include="ValidateStudent.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -112,16 +113,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Register.aspx" />
-    <Content Include="RegisterUser.aspx" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="ValidateSponsor.aspx" />
-    <Content Include="ValidateStudent.aspx" />
+    <Content Include="Validator.aspx" />
     <Content Include="Web.config" />
     <Content Include="Dynamic.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Student.aspx.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.aspx.designer.cs">
+      <DependentUpon>Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateSponsor.aspx.cs">
+      <DependentUpon>ValidateSponsor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidateSponsor.aspx.designer.cs">
+      <DependentUpon>ValidateSponsor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Master.Master.cs">
       <DependentUpon>Master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,19 +163,19 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RegisterUser.aspx.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Validator.aspx.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterUser.aspx.designer.cs">
-      <DependentUpon>RegisterUser.aspx</DependentUpon>
+    <Compile Include="Validator.aspx.designer.cs">
+      <DependentUpon>Validator.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ValidateSponsor.aspx.cs">
-      <DependentUpon>ValidateSponsor.aspx</DependentUpon>
+    <Compile Include="Options.aspx.cs">
+      <DependentUpon>Options.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ValidateSponsor.aspx.designer.cs">
-      <DependentUpon>ValidateSponsor.aspx</DependentUpon>
+    <Compile Include="Options.aspx.designer.cs">
+      <DependentUpon>Options.aspx</DependentUpon>
     </Compile>
     <Compile Include="ValidateStudent.aspx.cs">
       <DependentUpon>ValidateStudent.aspx</DependentUpon>

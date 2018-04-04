@@ -1,71 +1,80 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ValidateStudent.aspx.cs" Inherits="Instance1.ValidateStudent" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="ValidateStudent.aspx.cs" Inherits="Instance1.WebForm5" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<!DOCTYPE html>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="frmValidateStudent" runat="server">
-    <div style="height: 502px">
-      <table>
+    <div class="limiter">
+  
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+		
+			<h1>jQuery add / remove textbox example</h1>
 
-          <tr>
-              <td>Enter Subjects</td>
-              <td>Enter Marks</td>
-          </tr>
+<script type="text/javascript">
 
-              <tr>
-               <td><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>
-              </tr>
+$(document).ready(function(){
 
-           <tr>
-               <td><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></td>
-              </tr>
+    var counter = 2;
+		
+    $("#addButton").click(function () {
+				
+	if(counter>10){
+            alert("Only 10 textboxes allow");
+            return false;
+	}   
+		
+	var newTextBoxDiv = $(document.createElement('div'))
+	     .attr("id", 'TextBoxDiv' + counter);
+                
+	newTextBoxDiv.after().html('<label>Textbox #'+ counter + ' : </label>' +
+	      '<input type="text" name="textbox' + counter + 
+	      '" id="textbox' + counter + '" value="" >');
+            
+	newTextBoxDiv.appendTo("#TextBoxesGroup");
 
-           <tr>
-               <td><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox8" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox9" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox10" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox11" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox12" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox15" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox16" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox17" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox18" runat="server"></asp:TextBox></td>
-              </tr>
-           <tr>
-               <td><asp:TextBox ID="TextBox19" runat="server"></asp:TextBox></td>
-               <td><asp:TextBox ID="TextBox20" runat="server"></asp:TextBox></td>
-              </tr>
+				
+	counter++;
+     });
 
-            <tr ><asp:Button ID="btnValidateMarks" runat="server" Text="Check Average" OnClick="btnValidateMarks_Click" Height="16px" /></tr>
+     $("#removeButton").click(function () {
+	if(counter==1){
+          alert("No more textbox to remove");
+          return false;
+       }   
+        
+	counter--;
+			
+        $("#TextBoxDiv" + counter).remove();
+			
+     });
+		
+     $("#getButtonValue").click(function () {
+		
+	var msg = '';
+	for(i=1; i<counter; i++){
+   	  msg += "\n Textbox #" + i + " : " + $('#textbox' + i).val();
+	}
+    	  alert(msg);
+     });
+  });
+</script>
+</head><body>
 
-      </table>
-     
-          
-      
-    </div>
-    </form>
-</body>
-</html>
+<div id='TextBoxesGroup'>
+	<div id="TextBoxDiv1">
+		<label>Textbox #1 : </label><input type='textbox' id='textbox1' >
+	</div>
+</div>
+<input type='button' value='Add Button' id='addButton' />
+<input type='button' value='Remove Button' id='removeButton' />
+<input type='button' value='Get TextBox Value' id='getButtonValue' />
+
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+
+</asp:Content>

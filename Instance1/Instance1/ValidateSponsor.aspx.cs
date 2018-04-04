@@ -13,10 +13,5 @@ namespace Instance1
         {
 
         }
-
-        protected void btnSubmitAnswers_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
