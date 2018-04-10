@@ -15,7 +15,8 @@
   <link href="css/main.css" rel="stylesheet" />
   <link id="csspreset" href="css/presets/preset1.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-  
+  <link href="css/Profile.css" rel="stylesheet" /> 
+  <link href="css/profilepage.css" rel="stylesheet" /> 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
   <link rel="shortcut icon" href="images/favicon.ico" />
   <!--=========================================================================================-->

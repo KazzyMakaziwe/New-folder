@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>VAlidator</title>
+    <title>Validator</title>
 
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/animate.min.css" rel="stylesheet" /> 
@@ -25,7 +25,10 @@
 	div{
 		padding:8px;
 	}
-</style>
+         .auto-style1 {
+             width: 39px;
+         }
+     </style>
 
 </head>
 <body>
@@ -41,7 +44,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <h1><img class="img-responsive" src="images/Picture1.png" width="30%" height="20%" alt="logo" /></h1>
+            <h1><img class="img-responsive" src="images/logo3.png" width="30%" height="20%" alt="logo" /></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
@@ -69,20 +72,19 @@
  <div class="limiter" align="center">
   
 <div class="container-login100" style="background-color:#B1A5A5;">
-<h1><u>Please Enter your marks to calculate your average</u></h1>
-
-
-
+<h3><u>Please Enter your marks to calculate your average</u></h3>
 <div id='TextBoxesGroup'>
 	<div id="TextBoxDiv1">
 		<label>Subject #1 : </label><input type='textbox' id='textbox1' >
-        <label>Mark #1 : </label><input type='textbox' id='textbox2' >
+        <label>Mark #1 : </label><input type='textbox' id='marks1' >
 	</div>
 </div>
-<input type='button' value='Add Button' id='addButton' />
-<input type='button' value='Remove Button' id='removeButton' />
- <asp:Button ID="Calculate" runat="server" Text="Calculate Average" OnClick="Calculate_Click" />
-<!--<input type='button' value='Calculate Average' id='Calculation' />-->
+<input type='button' value='Add Subject' id='addButton' />
+<input type='button' value='Remove Subject' id='removeButton' />
+<input type='button' value='Calculate Average' id='Calculation' />
+    
+ <!--<asp:Button ID="Calculate" runat="server" Text="Calculate Average" OnClick="Calculate_Click" />-->
+
             </div>
      </div>
         </form>
@@ -128,7 +130,7 @@
   <script type="text/javascript" src="js/jquery.countTo.js"></script>
   <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
-
+  <script type="text/javascript" src="js/Dynamictextboxes.js"></script>
     <!--==============================================================================--->
 
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -140,7 +142,8 @@
 	<script src="vendor/daterangepicker/daterangepicker.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script src="js/main2.js"></script>
-    <script type="text/javascript" src="js/Dynamictextboxes.js"></script>
+   
+    
    
    <!-- </form>-->
 

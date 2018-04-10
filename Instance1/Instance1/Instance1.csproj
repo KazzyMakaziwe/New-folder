@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,6 +77,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -94,7 +97,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\BursaryPortal.mdf" />
+    <Content Include="App_Data\BursaryPortal_log.ldf">
+      <DependentUpon>BursaryPortal.mdf</DependentUpon>
+    </Content>
+    <Content Include="BursaryPortal.asmx" />
+    <Content Include="Registration.aspx" />
     <Content Include="Student.aspx" />
+    <Content Include="StudentRegistration.aspx" />
     <Content Include="ValidateSponsor.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -102,9 +112,8 @@
     </Content>
     <Content Include="Master.Master" />
     <Content Include="Login.aspx" />
-    <Content Include="Register.aspx" />
     <Content Include="Options.aspx" />
-    <Content Include="ValidateStudent.aspx" />
+    <Content Include="StudentProfile.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,12 +129,31 @@
     <Content Include="Dynamic.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BursaryPortal.asmx.cs">
+      <DependentUpon>BursaryPortal.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IService1.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student.aspx.cs">
       <DependentUpon>Student.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Student.aspx.designer.cs">
       <DependentUpon>Student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="ValidateSponsor.aspx.cs">
       <DependentUpon>ValidateSponsor.aspx</DependentUpon>
@@ -156,13 +184,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Validator.aspx.cs">
       <DependentUpon>Validator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,12 +198,12 @@
     <Compile Include="Options.aspx.designer.cs">
       <DependentUpon>Options.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ValidateStudent.aspx.cs">
-      <DependentUpon>ValidateStudent.aspx</DependentUpon>
+    <Compile Include="StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ValidateStudent.aspx.designer.cs">
-      <DependentUpon>ValidateStudent.aspx</DependentUpon>
+    <Compile Include="StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

@@ -17,25 +17,26 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">Full Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
+                        <asp:TextBox class="input100" ID="Fname" runat="server" placeholder="Name..."></asp:TextBox>
+						<!--<input class="input100" type="text" id="Fname" placeholder="Name..." />-->
+						<span class="focus-input100"></span>
+					</div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Full Name</span>
+						<input class="input100" type="text" name="Lname" placeholder="Name...">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Username...">
+						<input class="input100" type="text" name="Email" placeholder="Email addess...">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input class="input100" type="text" name="Pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -64,9 +65,7 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Sign Up
-							</button>
+                            <asp:Button ID="Sign" class="login100-form-btn" runat="server" Text="Sign UP" OnClick="Sign_Click" />
 						</div>
 
 						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">

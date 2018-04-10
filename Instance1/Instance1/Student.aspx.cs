@@ -16,7 +16,9 @@ namespace Instance1
 
         protected void Calculate_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 1; i < 12; i++)
+            {
+                            }
         }
     }
 }
