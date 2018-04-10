@@ -22,7 +22,7 @@
                     
                     <tr>
                         <td><div class="container-login100-form-btn">
-						<button id="btnSponsor" class="login100-form-btn" onclick="ValidateSponsor.aspx">
+						<button id="btnSponsor" class="login100-form-btn">
 							<a href="ValidateSponsor.aspx">Sponsor</a>
 						</button>
 					</div></td>
