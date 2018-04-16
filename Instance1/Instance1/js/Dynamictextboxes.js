@@ -3,7 +3,7 @@ $(document).ready(function(){
     var counter = 2;
 		
     $("#addButton").click(function () {
-				
+				alert("This is the current js");
 	if(counter>12){
 		
             alert("Only 12 textboxes allow");
@@ -48,7 +48,7 @@ $(document).ready(function(){
     	  var answer = confirm(msg + "Congratulations you have a minimum average of more than 50%." + "\n" + "click OK to proceed");
            if(answer==true)
 		   {
-			   window.location  = "StudentProfile.aspx";
+			   window.location  = "Registration.aspx";
 		   }else
 		   {
 			   window.location = "Dynamic.aspx";
