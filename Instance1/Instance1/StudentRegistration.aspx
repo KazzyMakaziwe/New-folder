@@ -36,17 +36,6 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="Dynamic.aspx#home">Home</a></li>
-            
-			<li class="scroll"><a href="Dynamic.aspx#services">Service</a></li> 
-			<!--<li class="scroll"><a href="index.html#Support">Support</a></li> 
-			<!--<li class="scroll"><a href="index.html#Bursaries">Bursaries</a></li> 
-			<!--<li class="scroll"><a href="index.html#portfolio">Application</a></li> 
-			<!--<li class="scroll"><a href="#services">Partners</a></li> -->
-            <li class="scroll"><a href="Dynamic.aspx#about-us">About Us</a></li>                     
-            <!--<li class="scroll"><a href="#portfolio">Gallery</a></li>-->
-            <li class="scroll"><a href="Dynamic.aspx#team">Team</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#blog">Blog</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#contact">Contact Us</a></li>  
              <li class="scroll"><a href="Login.aspx">Sign in</a></li>		
               <li class="scroll"><a href="Options.aspx">Sign Up</a></li>		
           </ul>
@@ -57,10 +46,10 @@
  
    <div class="contain">
   <form action="action_page.php">
-      <h3 align="center"><u>Welcome to your Profile</u></h3>
+      <h3 align="center"><u> Please create a profile</u></h3>
     <div class="row">
       <div class="col-25">
-        <label for="Nationality">Please enter your Nationality</label>
+        <label for="Nationality">Nationality</label>
       </div>
       <div class="col-75">
         <input type="text" id="Nationality" name="Nationality" placeholder="Nationality...">
@@ -68,7 +57,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Identity Number">Identity Number(ID Number)</label>
+        <label for="Identity Number">Identity Number</label>
       </div>
       <div class="col-75">
         <input type="text" id="ID" name="ID" placeholder="ID Number..">
@@ -77,7 +66,7 @@
 
    <div class="row">
       <div class="col-25">
-        <label for="Date of birth">Please enter your Date of Birth</label>
+        <label for="Date of birth">Date of Birth</label>
       </div>
        <div class="col-75">
         <input type="date" id="DOB" name="DOB" placeholder="Date of Birth..">
@@ -89,7 +78,7 @@
       </div>
        <div class="col-75">
         <select type="text" id="IDNo" name="ID" placeholder="ID Number..">
-            <option value="" >Please Choose Gender</option>
+            <option value="" >Select Gender</option>
             <option value="Female">Female</option>
             <option value="Male">Male</option>
             </select>
@@ -108,21 +97,20 @@
           <option value="Coloured">Coloured</option>
           <option value="other">Other</option>
         </select>
-          <input type="text" id="Specify" name="Specify" placeholder="if other Please specify...">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="University">Which Institution are you studying at</label>
+        <label for="University">Name of institution</label>
       </div>
         <div class="col-75">
-           <input type="text" id="University" name="University" placeholder="Which Institution are you studying...">
+           <input type="text" id="University" name="University" placeholder="Institution">
         </div>
       </div>
      
       <div class="row">
       <div class="col-25">
-        <label for="Qualification">Which qualification are you studying towards</label>
+        <label for="Qualification">Name of qualification</label>
       </div>
        <div class="col-75">
         <input type="text" id="Qualification" name="Qualification" placeholder="Qualification...">
@@ -131,11 +119,11 @@
 
       <div class="row">
       <div class="col-25">
-        <label for="level">which level of study are you currently in: </label>
+        <label for="level">Level of study </label>
       </div>
        <div class="col-75">
         <select type="text" id="level" name="level" placeholder="Which level of study...">
-            <option value="">Which level of study</option>
+            <option value="">select level of study</option>
             <option value="first">1st Year</option>
             <option value="Second">2nd Year</option>
             <option value="Third">3rd Year</option>
@@ -147,7 +135,7 @@
     </div>
         <div class="row">
       <div class="col-25">
-        <label for="Background">Company Background in less 200 words</label>
+        <label for="Background">Bio</label>
       </div>
       <div class="col-75">
         <textarea id="Background" name="Background" placeholder="Write Your company Background.." style="height:200px"></textarea>
