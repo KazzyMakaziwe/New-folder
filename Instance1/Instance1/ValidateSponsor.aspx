@@ -29,24 +29,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <h1><img class="img-responsive" src="images/logo3.png" width="30%" height="20%" alt="logo" /></h1>
+          <a class="navbar-brand" href="Login.aspx">
+            <!--<h1><img class="img-responsive" src="images/logo3.png" width="30%" height="20%" alt="logo" /></h1>-->
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="Dynamic.aspx#home">Home</a></li>
+            <li class="scroll active"><a href="StartUp.aspx">Home</a></li>
             
-			<li class="scroll"><a href="Dynamic.aspx#services">Service</a></li> 
-			<!--<li class="scroll"><a href="index.html#Support">Support</a></li> 
-			<!--<li class="scroll"><a href="index.html#Bursaries">Bursaries</a></li> 
-			<!--<li class="scroll"><a href="index.html#portfolio">Application</a></li> 
-			<!--<li class="scroll"><a href="#services">Partners</a></li> -->
-            <li class="scroll"><a href="Dynamic.aspx#about-us">About Us</a></li>                     
-            <!--<li class="scroll"><a href="#portfolio">Gallery</a></li>-->
-            <li class="scroll"><a href="Dynamic.aspx#team">Team</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#blog">Blog</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#contact">Contact Us</a></li>  
+			 
              <li class="scroll"><a href="Login.aspx">Sign in</a></li>		
               <li class="scroll"><a href="Options.aspx">Sign Up</a></li>		
           </ul>
@@ -57,7 +48,7 @@
  
    <div class="contain">
   <form action="action_page.php">
-      <h1><u>Please fill in this application form</u></h1>
+      <h1 align="center"><u>Please fill in this application form</u></h1>
     <div class="row">
       <div class="col-25">
         <label for="fname">Company name</label>
@@ -93,7 +84,7 @@
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Studenttypes">what kind of studentd you are interested in:</label>
+        <label for="Studenttypes">what kind of students you are interested in:</label>
       </div>
       <div class="col-75">
         <select id="Studenttypes" name="Studenttypes">

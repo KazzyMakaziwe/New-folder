@@ -103,6 +103,7 @@
     </Content>
     <Content Include="BursaryPortal.asmx" />
     <Content Include="Registration.aspx" />
+    <Content Include="StartUp.aspx" />
     <Content Include="Student.aspx" />
     <Content Include="StudentRegistration.aspx" />
     <Content Include="ValidateSponsor.aspx" />
@@ -114,6 +115,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Options.aspx" />
     <Content Include="StudentProfile.aspx" />
+    <Content Include="Options2.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,7 +128,6 @@
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Validator.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Dynamic.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BursaryPortal.asmx.cs">
@@ -140,6 +141,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp.aspx.cs">
+      <DependentUpon>StartUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StartUp.aspx.designer.cs">
+      <DependentUpon>StartUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Student.aspx.cs">
       <DependentUpon>Student.aspx</DependentUpon>
@@ -170,13 +178,6 @@
       <DependentUpon>Master.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Dynamic.aspx.cs">
-      <DependentUpon>Dynamic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Dynamic.aspx.designer.cs">
-      <DependentUpon>Dynamic.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="StudentProfile.aspx.designer.cs">
       <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>Options2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>Options2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

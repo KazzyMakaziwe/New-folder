@@ -13,5 +13,10 @@ namespace Instance1
         {
 
         }
+
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

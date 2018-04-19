@@ -53,23 +53,14 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            <h1><img class="img-responsive" src="images/logo3.png" width="30%" height="20%" alt="logo" /></h1>
+       <!---     <h1><img class="img-responsive" src="images/logo3.png" width="30%" height="20%" alt="logo" /></h1>-->
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="Dynamic.aspx#home">Home</a></li>
             
-			<li class="scroll"><a href="Dynamic.aspx#services">Service</a></li> 
-			<!--<li class="scroll"><a href="index.html#Support">Support</a></li> 
-			<!--<li class="scroll"><a href="index.html#Bursaries">Bursaries</a></li> 
-			<!--<li class="scroll"><a href="index.html#portfolio">Application</a></li> 
-			<!--<li class="scroll"><a href="#services">Partners</a></li> -->
-            <li class="scroll"><a href="Dynamic.aspx#about-us">About Us</a></li>                     
-            <!--<li class="scroll"><a href="#portfolio">Gallery</a></li>-->
-            <li class="scroll"><a href="Dynamic.aspx#team">Team</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#blog">Blog</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#contact">Contact Us</a></li>  
+			 
              <li class="scroll"><a href="Login.aspx">Sign in</a></li>		
               <li class="scroll"><a href="Validator.aspx">Sign Up</a></li>		
           </ul>
@@ -83,7 +74,7 @@
 			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" runat="server">
 					<span class="login100-form-title p-b-59">
 						Sign Up
 					</span>
@@ -136,13 +127,10 @@
 
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								Sign Up
-							</button>
-						</div>
-
-						<a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+                           <div class="login100-form-bgbtn"></div>
+                            <asp:Button ID="btnSignUp"  class="login100-form-btn" runat="server" Text="Sign Up" OnClick="btnSignUp_Click" />
+						<</div>
+                         <a href="#" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
 							Sign in
 							<i class="fa fa-long-arrow-right m-l-5"></i>
 						</a>

@@ -50,17 +50,7 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="Dynamic.aspx#home">Home</a></li>
-            
-			<li class="scroll"><a href="Dynamic.aspx#services">Service</a></li> 
-			<!--<li class="scroll"><a href="index.html#Support">Support</a></li> 
-			<!--<li class="scroll"><a href="index.html#Bursaries">Bursaries</a></li> 
-			<!--<li class="scroll"><a href="index.html#portfolio">Application</a></li> 
-			<!--<li class="scroll"><a href="#services">Partners</a></li> -->
-            <li class="scroll"><a href="Dynamic.aspx#about-us">About Us</a></li>                     
-            <!--<li class="scroll"><a href="#portfolio">Gallery</a></li>-->
-            <li class="scroll"><a href="Dynamic.aspx#team">Team</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#blog">Blog</a></li>
-            <li class="scroll"><a href="Dynamic.aspx#contact">Contact Us</a></li>  
+              
              <li class="scroll"><a href="Login.aspx">Sign in</a></li>		
               <li class="scroll"><a href="Validator.aspx">Sign Up</a></li>		
           </ul>
@@ -71,7 +61,7 @@
     <form id="frmRegistration" runat="server">
  <div class="limiter" align="center">
   
-<div class="container-login100" style="background-color:#B1A5A5;">
+<div class="container-login100" style="background-color:#d3d3d3;">
 <h3><u>Please Enter your marks to calculate your average</u></h3>
 <div id='TextBoxesGroup'>
 	<div id="TextBoxDiv1">
