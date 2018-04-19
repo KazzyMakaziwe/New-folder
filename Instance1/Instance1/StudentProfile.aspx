@@ -18,9 +18,7 @@
       <nav id="profiletabs">
         <ul class="clearfix">
           <li><a href="#bio" class="sel">Bio</a></li>
-          <li><a href="#activity">Personal details</a></li>
-          <li><a href="#friends">Friends</a></li>
-          <li><a href="#settings">Settings</a></li>
+         
         </ul>
       </nav>
       
