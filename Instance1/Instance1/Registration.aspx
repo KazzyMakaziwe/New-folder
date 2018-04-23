@@ -58,7 +58,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="scroll active"><a href="Dynamic.aspx#home">Home</a></li>
+            <li class="scroll active"><a href="StartUp.aspx">Home</a></li>
             
 			 
              <li class="scroll"><a href="Login.aspx">Sign in</a></li>		
@@ -81,33 +81,34 @@
 
 					<div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">First Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
+						<!--<input class="input100" type="text" id="name" name="name" placeholder="Name..."/>-->
+                        <asp:TextBox type="text" class="input100" ID="name" placeholder="name..." runat="server"></asp:TextBox>
 						<span class="focus-input100"></span>
 					</div>
                     <div class="wrap-input100 validate-input" data-validate="Name is required">
 						<span class="label-input100">Second Name</span>
-						<input class="input100" type="text" name="name" placeholder="Name...">
-						<span class="focus-input100"></span>
+						<!--<input class="input100" type="text" id="Surname" name="Surname" placeholder="Surname...">-->
+						<asp:TextBox type="text" class="input100" ID="Surname" placeholder="Surname..." runat="server"></asp:TextBox>
+                        <span class="focus-input100"></span>
 					</div>
 
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="email" placeholder="Email addess...">
-						<span class="focus-input100"></span>
+						<!--<input class="input100" type="text" id="email" name="email" placeholder="Email addess...">-->
+                        <asp:TextBox type="text" class="input100" ID="Email" placeholder="Email..." runat="server"></asp:TextBox>
+                        <asp:RegularExpressionValidator ID="errEmail" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="Email" runat="server" ErrorMessage="Enter a valid Email"></asp:RegularExpressionValidator>
+                        <span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<!--<input class="input100" type="text"id="pass"  name="pass" placeholder="*************">-->
+                        <asp:TextBox type="password" class="input100" ID="Pass" placeholder="*******" runat="server"></asp:TextBox>
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
-						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
-						<span class="focus-input100"></span>
-					</div>
+					
 
 					<div class="flex-m w-full p-b-33">
 						<div class="contact100-form-checkbox">

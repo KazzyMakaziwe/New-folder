@@ -23,7 +23,7 @@
                     <tr>
                         <td><div class="container-login100-form-btn">
 						<button id="btnSponsor" class="login100-form-btn">
-							<a href="ValidateSponsor.aspx">Sponsor</a>
+							<a href="Manager.aspx">Sponsor</a>
 						</button>
 					</div></td>
                         <td><div class="container-login100-form-btn" >

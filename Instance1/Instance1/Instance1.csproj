@@ -97,11 +97,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Agent.aspx" />
     <Content Include="App_Data\BursaryPortal.mdf" />
     <Content Include="App_Data\BursaryPortal_log.ldf">
       <DependentUpon>BursaryPortal.mdf</DependentUpon>
     </Content>
     <Content Include="BursaryPortal.asmx" />
+    <Content Include="Manager.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="StartUp.aspx" />
     <Content Include="Student.aspx" />
@@ -116,6 +118,7 @@
     <Content Include="Options.aspx" />
     <Content Include="StudentProfile.aspx" />
     <Content Include="Options2.aspx" />
+    <Content Include="AgentManager.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -130,11 +133,25 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agent.aspx.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agent.aspx.designer.cs">
+      <DependentUpon>Agent.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BursaryPortal.asmx.cs">
       <DependentUpon>BursaryPortal.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="IService1.cs" />
+    <Compile Include="Manager.aspx.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager.aspx.designer.cs">
+      <DependentUpon>Manager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -206,12 +223,12 @@
     <Compile Include="StudentProfile.aspx.designer.cs">
       <DependentUpon>StudentProfile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>Options2.aspx</DependentUpon>
+    <Compile Include="AgentManager.aspx.cs">
+      <DependentUpon>AgentManager.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>Options2.aspx</DependentUpon>
+    <Compile Include="AgentManager.aspx.designer.cs">
+      <DependentUpon>AgentManager.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
